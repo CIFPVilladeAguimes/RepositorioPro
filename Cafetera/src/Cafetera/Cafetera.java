@@ -15,11 +15,11 @@ public class Cafetera {
 		this.cantidadc = cantidadc;
 	}
 	//Este metodo nos dirá la cantidad de cafe que actualmente haya en la cafetera
-	 public int consultar_cafe(){
+	 public int consultar_caferestante(){
 		return cantidadc;
 	 }
 	 //Este metodo nos dirá la cantidad de agua que actualmente haya en la cafetera
-	 public int consultar_agua(){
+	 public int consultar_aguarestante(){
 		return cantidada;
 	 }
 	 //Este metodo servirá el cafe descontándole a las cantidades actuales de cafe y agua las unidades necesarias para crear dicho café

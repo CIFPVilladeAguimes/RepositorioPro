@@ -63,14 +63,14 @@ public class Aplicacioncafetera {
     	case 3:
     	// Aquí llamo al método consultar_café
     	int cantidadcafeactual=0;
-    	cantidadcafeactual=ejemplo.consultar_cafe();
+    	cantidadcafeactual=ejemplo.consultar_caferestante();
     	System.out.println( "Cantidad actual de cafe es de: " + cantidadcafeactual + " unidades");
     	break;
     	
     	case 4:
     	//Aquí llamo al método consultar_agua
     	int cantidadaguaactual=0;
-    	cantidadaguaactual=ejemplo.consultar_agua();
+    	cantidadaguaactual=ejemplo.consultar_aguarestante();
         System.out.println( "Cantidad actual de agua es de: " + cantidadaguaactual + " unidades");
         break;
     	
@@ -78,12 +78,12 @@ public class Aplicacioncafetera {
     	//Aquí llamo al método servir_café
     	//Pero antes compruebo que exista la cantidad necesaria en los depósitos para crear un café, si no es así saldrá del programa
     	int cantidadcafeservidos = 0;
-    	cantidadagua = ejemplo.consultar_agua();
+    	cantidadagua = ejemplo.consultar_aguarestante();
     	if (cantidadagua < 20){
     		System.out.print("Cantidad insuficiente de agua");
     		return;
     	}
-    	cantidadcafe = ejemplo.consultar_cafe();
+    	cantidadcafe = ejemplo.consultar_caferestante();
     	if (cantidadcafe < 50){
     		System.out.print("Cantidad insuficiente de cafe");
     		return;
@@ -100,7 +100,7 @@ public class Aplicacioncafetera {
     	int cantidadnuevacafe = 0;
     	System.out.println("Introduzca la cantidad a introducir");
     	cantidadnuevacafe = leer.nextInt();
-    	cantidadac2cafe= ejemplo.consultar_cafe();
+    	cantidadac2cafe= ejemplo.consultar_caferestante();
     	if ((cantidadac2cafe+cantidadnuevacafe >500)){
     		System.out.print("Límites de cafe superados");
     		return;
@@ -116,7 +116,7 @@ public class Aplicacioncafetera {
     	int cantidadnuevaagua = 0;
         System.out.println("Introduzca la cantidad a introducir");
         cantidadnuevaagua = leer.nextInt();
-        cantidadac2agua= ejemplo.consultar_agua();
+        cantidadac2agua= ejemplo.consultar_aguarestante();
     	if ((cantidadac2agua+cantidadnuevaagua >500)){
     		System.out.print("Límites de agua superados");
     		return;
